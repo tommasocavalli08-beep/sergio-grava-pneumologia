@@ -1,0 +1,49 @@
+import Link from "next/link";
+import { Reveal } from "@/components/reveal";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
+import { services } from "@/data/services";
+
+export default function Home() {
+  return <>
+    <SiteHeader />
+    <main>
+      <section className="hero">
+        <div className="hero-atmosphere"><i/><i/><i/></div>
+        <div className="hero-copy">
+          <p className="kicker">Pneumologia em Maringá</p>
+          <h1>Respirar bem.<br/><em>Viver por inteiro.</em></h1>
+          <p className="hero-lead">Cuidado respiratório especializado, preciso e humano — da prevenção ao tratamento.</p>
+          <div className="hero-actions"><a href="https://wa.me/5544991721222" className="button" target="_blank" rel="noreferrer">Agendar consulta <span>↗</span></a><Link href="#cuidados" className="text-link">Conheça os cuidados <span>↓</span></Link></div>
+        </div>
+        <div className="lung-art" aria-hidden="true">
+          <div className="air air-one"/><div className="air air-two"/><div className="air air-three"/>
+          <svg viewBox="0 0 580 660" fill="none"><path d="M291 68v184M291 182c-39 17-64 50-76 98M291 182c39 17 64 50 76 98" className="trachea"/><path d="M269 260c-20-72-66-114-114-104-52 11-90 82-102 167-17 117 18 232 104 238 76 5 113-50 114-120l-2-181Z" className="lung left"/><path d="M313 260c20-72 66-114 114-104 52 11 90 82 102 167 17 117-18 232-104 238-76 5-113-50-114-120l2-181Z" className="lung right"/><path d="M266 278c-47 39-76 91-85 160M316 278c47 39 76 91 85 160M242 323l-59-39M340 323l59-39M224 369l-56 22M358 369l56 22" className="bronchi"/></svg>
+          <div className="hero-stat"><b>20+</b><span>anos dedicados<br/>à medicina</span></div>
+        </div>
+        <div className="scroll-cue"><span>Role para descobrir</span><i/></div>
+      </section>
+
+      <section className="intro" id="sobre">
+        <Reveal className="intro-number">01</Reveal>
+        <Reveal className="intro-title"><p className="kicker">Medicina que escuta</p><h2>Experiência clínica.<br/><em>Cuidado que acolhe.</em></h2></Reveal>
+        <Reveal className="intro-copy" delay={160}><p>O cuidado começa por compreender cada história. Uma atuação baseada em evidências, precisão diagnóstica e decisões compartilhadas.</p><Link href="#formacao" className="text-link">Conheça a trajetória <span>↘</span></Link></Reveal>
+      </section>
+
+      <section className="care" id="cuidados">
+        <div className="section-head"><div><p className="kicker">Áreas de cuidado</p><h2>Um olhar completo<br/>para a sua <em>respiração.</em></h2></div><p>Da investigação de sintomas ao acompanhamento de doenças crônicas e procedimentos especializados.</p></div>
+        <div className="service-grid">
+          {services.map((service, index) => <Reveal key={service.slug} delay={(index % 3) * 70}><Link className="service-card" href={`/cuidados/${service.slug}`}><span className="service-index">{service.icon}</span><div className="service-icon"><i/><i/><i/></div><h3>{service.title}</h3><p>{service.short}</p><span className="card-link">Saiba mais <b>↗</b></span></Link></Reveal>)}
+        </div>
+      </section>
+
+      <section className="credentials" id="formacao">
+        <div className="credentials-visual"><div className="monogram">SG</div><div className="pulse-ring one"/><div className="pulse-ring two"/></div>
+        <Reveal className="credentials-copy"><p className="kicker light">Formação & experiência</p><h2>Ciência, precisão<br/>e <em>humanidade.</em></h2><p>Médico formado pela Universidade Estadual de Maringá, com especialização em Pneumologia e área de atuação em Endoscopia Respiratória pela UNIFESP.</p><div className="degree-list"><div><span>01</span><p><b>Pneumologista</b>RQE 13548</p></div><div><span>02</span><p><b>Endoscopia Respiratória</b>RQE 158 • UNIFESP</p></div><div><span>03</span><p><b>Mestre em Ciências da Saúde</b>Universidade Estadual de Maringá</p></div><div><span>04</span><p><b>Doutor em Biociências e Fisiopatologia</b>Universidade Estadual de Maringá</p></div></div></Reveal>
+      </section>
+
+      <section className="principles"><p className="kicker">Um cuidado diferente</p><div className="principle-grid"><Reveal><span>01</span><h3>Escuta atenta</h3><p>Tempo e atenção para entender seus sintomas, rotina e objetivos.</p></Reveal><Reveal delay={90}><span>02</span><h3>Decisão compartilhada</h3><p>Informação clara para que você participe de cada escolha do tratamento.</p></Reveal><Reveal delay={180}><span>03</span><h3>Medicina baseada em evidências</h3><p>Condutas atualizadas, seguras e adequadas à realidade de cada paciente.</p></Reveal></div></section>
+    </main>
+    <SiteFooter />
+  </>;
+}
