@@ -4,6 +4,15 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { services } from "@/data/services";
 
+const programs = [
+  { number: "01", title: "Tabagismo", text: "Acompanhamento personalizado para reduzir a dependência, controlar gatilhos e construir uma vida livre do cigarro.", href: "/cuidados/cessacao-do-tabagismo" },
+  { number: "02", title: "DPOC", text: "Plano contínuo para controlar sintomas, prevenir exacerbações e preservar a capacidade respiratória e a autonomia.", href: "/cuidados/consulta-com-pneumologista" },
+  { number: "03", title: "Doenças Fibrosantes", text: "Monitoramento especializado da função pulmonar, sintomas e resposta ao tratamento ao longo do tempo.", href: "/cuidados/doencas-fibrosantes" },
+  { number: "04", title: "Asma", text: "Controle estruturado das crises, identificação de gatilhos e ajuste do tratamento para respirar com segurança.", href: "/cuidados/asma" },
+  { number: "05", title: "Apneia do Sono", text: "Acompanhamento da qualidade do sono e da adaptação ao tratamento para recuperar energia e bem-estar.", href: "/cuidados/apneia-do-sono" },
+  { number: "06", title: "Alergias Respiratórias", text: "Investigação de alérgenos, prevenção de crises e acompanhamento da evolução dos sintomas respiratórios.", href: "/cuidados/doencas-alergicas" },
+];
+
 export default function Home() {
   return <>
     <SiteHeader />
@@ -34,6 +43,14 @@ export default function Home() {
         <div className="section-head"><div><p className="kicker">Áreas de cuidado</p><h2>Um olhar completo<br/>para a sua <em>respiração.</em></h2></div><p>Da investigação de sintomas ao acompanhamento de doenças crônicas e procedimentos especializados.</p></div>
         <div className="service-grid">
           {services.map((service, index) => <Reveal key={service.slug} delay={(index % 3) * 70}><Link className="service-card" href={`/cuidados/${service.slug}`}><span className="service-index">{service.icon}</span><div className="service-icon"><i/><i/><i/></div><h3>{service.title}</h3><p>{service.short}</p><span className="card-link">Saiba mais <b>↗</b></span></Link></Reveal>)}
+        </div>
+      </section>
+
+
+      <section className="pat-section" id="programas">
+        <Reveal className="pat-heading"><div><p className="kicker light">Cuidado que continua</p><h2>PATs</h2><span>Programas de Acompanhamento<br/>e Tratamento</span></div><p>Planos de cuidado contínuo, pensados para acompanhar cada etapa do tratamento, avaliar a evolução e promover mais qualidade de vida.</p></Reveal>
+        <div className="pat-grid">
+          {programs.map((program, index) => <Reveal key={program.title} delay={(index % 3) * 80}><Link href={program.href} className="pat-card"><span className="pat-number">{program.number}</span><div className="pat-symbol"><i/><i/></div><h3>{program.title}</h3><p>{program.text}</p><span className="pat-link">Conheça o programa <b>↗</b></span></Link></Reveal>)}
         </div>
       </section>
 
