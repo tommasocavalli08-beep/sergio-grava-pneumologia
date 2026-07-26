@@ -47,6 +47,18 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="clinic-feature" aria-labelledby="estrutura-title">
+        <Reveal className="clinic-feature-main">
+          <div className="clinic-feature-image"><Image src="/clinic/recepcao-ampla.jpeg" alt="Recepção ampla do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 100vw, 58vw"/></div>
+          <div className="clinic-feature-caption"><span>Centro Médico do Pulmão</span><b>Conforto desde a chegada</b></div>
+        </Reveal>
+        <Reveal className="clinic-feature-copy" delay={120}>
+          <p className="kicker">Estrutura completa</p>
+          <h2 id="estrutura-title">Cuidado e tecnologia<br/><em>no mesmo lugar.</em></h2>
+          <p>Ambientes acolhedores e estrutura preparada para consultas, avaliações e exames respiratórios com segurança.</p>
+          <div className="clinic-feature-detail"><Image src="/clinic/equipamentos.jpeg" alt="Equipamentos para exames de função pulmonar" fill sizes="(max-width: 900px) 42vw, 22vw"/><span>Equipamentos para avaliação da função pulmonar</span></div>
+        </Reveal>
+      </section>
 
       <section className="pat-section" id="programas">
         <Reveal className="pat-heading"><div><p className="kicker light">Cuidado que continua</p><h2>PATs</h2><span>Programas de Acompanhamento<br/>e Tratamento</span></div><p>Planos de cuidado contínuo, pensados para acompanhar cada etapa do tratamento, avaliar a evolução e promover mais qualidade de vida.</p></Reveal>
@@ -56,27 +68,22 @@ export default function Home() {
       </section>
 
       <section className="credentials" id="formacao">
-        <div className="credentials-visual"><div className="monogram">SG</div><div className="pulse-ring one"/><div className="pulse-ring two"/></div>
+        <Reveal className="credentials-visual"><Image src="/clinic/dr-sergio-congresso.jpeg" alt="Dr. Sergio Grava no Congresso Paulista de Pneumologia e Tisiologia" fill priority={false} sizes="(max-width: 900px) 100vw, 50vw"/><div className="credentials-photo-label"><span>Dr. Sergio Grava</span><small>Pneumologista • RQE 13548</small></div></Reveal>
         <Reveal className="credentials-copy"><p className="kicker light">Formação & experiência</p><h2>Ciência, precisão<br/>e <em>humanidade.</em></h2><p>Médico formado pela Universidade Estadual de Maringá, com especialização em Pneumologia e área de atuação em Endoscopia Respiratória pela UNIFESP.</p><div className="degree-list"><div><span>01</span><p><b>Pneumologista</b>RQE 13548</p></div><div><span>02</span><p><b>Endoscopia Respiratória</b>RQE 158 • UNIFESP</p></div><div><span>03</span><p><b>Mestre em Ciências da Saúde</b>Universidade Estadual de Maringá</p></div><div><span>04</span><p><b>Doutor em Biociências e Fisiopatologia</b>Universidade Estadual de Maringá</p></div></div></Reveal>
       </section>
 
       <section className="principles"><p className="kicker">Um cuidado diferente</p><div className="principle-grid"><Reveal><span>01</span><h3>Escuta atenta</h3><p>Tempo e atenção para entender seus sintomas, rotina e objetivos.</p></Reveal><Reveal delay={90}><span>02</span><h3>Decisão compartilhada</h3><p>Informação clara para que você participe de cada escolha do tratamento.</p></Reveal><Reveal delay={180}><span>03</span><h3>Medicina baseada em evidências</h3><p>Condutas atualizadas, seguras e adequadas à realidade de cada paciente.</p></Reveal></div></section>
 
-      <section className="clinic-section" id="clinica">
-        <Reveal className="clinic-heading"><div><p className="kicker">Clínica & estrutura</p><h2>Um espaço preparado<br/>para <em>cuidar de você.</em></h2></div><p>Ambientes acessíveis, acolhedores e equipados para consultas, avaliações e exames respiratórios com conforto e segurança.</p></Reveal>
-        <div className="clinic-gallery">
-          <Reveal className="clinic-photo clinic-photo-featured"><Image src="/clinic/fachada.jpeg" alt="Fachada do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 100vw, 60vw"/></Reveal>
-          <Reveal className="clinic-photo clinic-photo-portrait" delay={80}><Image src="/clinic/dr-sergio-congresso.jpeg" alt="Dr. Sergio Grava no Congresso Paulista de Pneumologia" fill sizes="(max-width: 900px) 100vw, 40vw"/></Reveal>
-          <Reveal className="clinic-photo" delay={120}><Image src="/clinic/recepcao-espera.jpeg" alt="Sala de espera do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
-          <Reveal className="clinic-photo" delay={160}><Image src="/clinic/recepcao-balcao.jpeg" alt="Recepção da clínica" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
-          <Reveal className="clinic-photo" delay={200}><Image src="/clinic/consultorio.jpeg" alt="Consultório médico equipado" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
-          <Reveal className="clinic-photo clinic-photo-wide"><Image src="/clinic/entrada.jpeg" alt="Entrada do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 100vw, 50vw"/></Reveal>
-          <Reveal className="clinic-photo clinic-photo-wide" delay={100}><Image src="/clinic/equipamentos.jpeg" alt="Equipamentos para exames de função pulmonar" fill sizes="(max-width: 900px) 100vw, 50vw"/></Reveal>
-          <Reveal className="clinic-photo"><Image src="/clinic/corredor.jpeg" alt="Corredor interno da clínica" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
-          <Reveal className="clinic-photo"><Image src="/clinic/recepcao-ampla.jpeg" alt="Estrutura ampla da recepção" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
-          <Reveal className="clinic-photo"><Image src="/clinic/dr-sergio.jpeg" alt="Dr. Sergio Grava" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
-        </div>
+      <section className="location-feature" id="clinica">
+        <div className="location-image"><Image src="/clinic/fachada.jpeg" alt="Fachada do Centro Médico do Pulmão em Maringá" fill sizes="100vw"/></div>
+        <Reveal className="location-card">
+          <p className="kicker light">Onde estamos</p>
+          <h2>Centro Médico<br/>do Pulmão</h2>
+          <p>Avenida Carlos Gomes, 242<br/>Zona 05 — Maringá, PR</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Carlos+Gomes+242+Maringa+PR" target="_blank" rel="noreferrer" className="button button-light">Ver no mapa <span>↗</span></a>
+        </Reveal>
       </section>
+
     </main>
     <SiteFooter />
   </>;
