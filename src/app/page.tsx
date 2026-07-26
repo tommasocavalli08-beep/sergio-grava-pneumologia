@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -60,6 +61,22 @@ export default function Home() {
       </section>
 
       <section className="principles"><p className="kicker">Um cuidado diferente</p><div className="principle-grid"><Reveal><span>01</span><h3>Escuta atenta</h3><p>Tempo e atenção para entender seus sintomas, rotina e objetivos.</p></Reveal><Reveal delay={90}><span>02</span><h3>Decisão compartilhada</h3><p>Informação clara para que você participe de cada escolha do tratamento.</p></Reveal><Reveal delay={180}><span>03</span><h3>Medicina baseada em evidências</h3><p>Condutas atualizadas, seguras e adequadas à realidade de cada paciente.</p></Reveal></div></section>
+
+      <section className="clinic-section" id="clinica">
+        <Reveal className="clinic-heading"><div><p className="kicker">Clínica & estrutura</p><h2>Um espaço preparado<br/>para <em>cuidar de você.</em></h2></div><p>Ambientes acessíveis, acolhedores e equipados para consultas, avaliações e exames respiratórios com conforto e segurança.</p></Reveal>
+        <div className="clinic-gallery">
+          <Reveal className="clinic-photo clinic-photo-featured"><Image src="/clinic/fachada.jpeg" alt="Fachada do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 100vw, 60vw"/></Reveal>
+          <Reveal className="clinic-photo clinic-photo-portrait" delay={80}><Image src="/clinic/dr-sergio-congresso.jpeg" alt="Dr. Sergio Grava no Congresso Paulista de Pneumologia" fill sizes="(max-width: 900px) 100vw, 40vw"/></Reveal>
+          <Reveal className="clinic-photo" delay={120}><Image src="/clinic/recepcao-espera.jpeg" alt="Sala de espera do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
+          <Reveal className="clinic-photo" delay={160}><Image src="/clinic/recepcao-balcao.jpeg" alt="Recepção da clínica" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
+          <Reveal className="clinic-photo" delay={200}><Image src="/clinic/consultorio.jpeg" alt="Consultório médico equipado" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
+          <Reveal className="clinic-photo clinic-photo-wide"><Image src="/clinic/entrada.jpeg" alt="Entrada do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 100vw, 50vw"/></Reveal>
+          <Reveal className="clinic-photo clinic-photo-wide" delay={100}><Image src="/clinic/equipamentos.jpeg" alt="Equipamentos para exames de função pulmonar" fill sizes="(max-width: 900px) 100vw, 50vw"/></Reveal>
+          <Reveal className="clinic-photo"><Image src="/clinic/corredor.jpeg" alt="Corredor interno da clínica" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
+          <Reveal className="clinic-photo"><Image src="/clinic/recepcao-ampla.jpeg" alt="Estrutura ampla da recepção" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
+          <Reveal className="clinic-photo"><Image src="/clinic/dr-sergio.jpeg" alt="Dr. Sergio Grava" fill sizes="(max-width: 900px) 100vw, 33vw"/></Reveal>
+        </div>
+      </section>
     </main>
     <SiteFooter />
   </>;
