@@ -35,7 +35,10 @@ export default function Home() {
       </section>
 
       <section className="intro" id="sobre">
-        <Reveal className="intro-number">01</Reveal>
+        <Reveal className="intro-visual">
+          <div className="intro-photo intro-photo-main"><Image src="/clinic/corredor.jpeg" alt="Ambientes internos do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 86vw, 24vw"/></div>
+          <div className="intro-photo intro-photo-detail"><Image src="/clinic/consultorio.jpeg" alt="Consultório do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 38vw, 13vw"/></div>
+        </Reveal>
         <Reveal className="intro-title"><p className="kicker">Medicina que escuta</p><h2>Experiência clínica.<br/><em>Cuidado que acolhe.</em></h2></Reveal>
         <Reveal className="intro-copy" delay={160}><p>O cuidado começa por compreender cada história. Uma atuação baseada em evidências, precisão diagnóstica e decisões compartilhadas.</p><Link href="#formacao" className="text-link">Conheça a trajetória <span>↘</span></Link></Reveal>
       </section>
