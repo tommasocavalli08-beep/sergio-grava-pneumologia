@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       <section className="credentials" id="formacao">
-        <Reveal className="credentials-visual"><Image src="/clinic/dr-sergio-congresso.jpeg" alt="Dr. Sergio Grava no Congresso Paulista de Pneumologia e Tisiologia" fill priority={false} sizes="(max-width: 900px) 100vw, 50vw"/><div className="credentials-photo-label"><span>Dr. Sergio Grava</span><small>Pneumologista • RQE 13548</small></div></Reveal>
+        <Reveal className="credentials-visual"><div className="credentials-orbit credentials-orbit-one"/><div className="credentials-orbit credentials-orbit-two"/><div className="credentials-portrait-frame"><Image src="/clinic/dr-sergio.jpeg" alt="Retrato do Dr. Sergio Grava" fill sizes="(max-width: 600px) 240px, 360px"/></div><div className="credentials-photo-label"><span>Dr. Sergio Grava</span><small>Pneumologista • RQE 13548</small></div></Reveal>
         <Reveal className="credentials-copy"><p className="kicker light">Formação & experiência</p><h2>Ciência, precisão<br/>e <em>humanidade.</em></h2><p>Médico formado pela Universidade Estadual de Maringá, com especialização em Pneumologia e área de atuação em Endoscopia Respiratória pela UNIFESP.</p><div className="degree-list"><div><span>01</span><p><b>Pneumologista</b>RQE 13548</p></div><div><span>02</span><p><b>Endoscopia Respiratória</b>RQE 158 • UNIFESP</p></div><div><span>03</span><p><b>Mestre em Ciências da Saúde</b>Universidade Estadual de Maringá</p></div><div><span>04</span><p><b>Doutor em Biociências e Fisiopatologia</b>Universidade Estadual de Maringá</p></div></div></Reveal>
       </section>
 
