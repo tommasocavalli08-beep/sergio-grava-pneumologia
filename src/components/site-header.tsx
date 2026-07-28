@@ -17,7 +17,7 @@ export function SiteHeader() {
         <Link href="/#sobre" onClick={() => setOpen(false)}>Sobre</Link>
         <Link href="/#cuidados" onClick={() => setOpen(false)}>Cuidados</Link>
         <Link href="/#contato" onClick={() => setOpen(false)}>Contato</Link>
-        <a className="nav-cta" href="https://wa.me/5544991721222" target="_blank" rel="noreferrer">Agendar consulta <span>↗</span></a>
+        <a className="nav-cta" href="https://wa.me/5544991721222" target="_blank" rel="noreferrer">Agende sua avaliação respiratória <span>↗</span></a>
       </nav>
     </div>
   </header>;

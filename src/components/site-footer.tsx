@@ -6,7 +6,7 @@ export function SiteFooter() {
     <div className="footer-content">
       <p className="kicker light">Vamos conversar</p>
       <h2>Cuidar da sua respiração<br/>é cuidar da sua vida.</h2>
-      <a href="https://wa.me/5544991721222" target="_blank" rel="noreferrer" className="button button-light">Agendar pelo WhatsApp <span>↗</span></a>
+      <a href="https://wa.me/5544991721222" target="_blank" rel="noreferrer" className="button button-light">Agende sua avaliação respiratória <span>↗</span></a>
       <div className="footer-grid">
         <div><span>Consultório</span><p>Avenida Carlos Gomes, 242<br/>Zona 05 — Maringá, PR<br/>CEP 87015-200</p></div>
         <div><span>Contato</span><a href="tel:+554430311222"><b>Telefone:</b> (44) 3031-1222</a><a href="https://wa.me/5544991721222" target="_blank" rel="noreferrer"><b>Celular / WhatsApp:</b> (44) 99172-1222</a><a href="mailto:sergiogravapneumo@gmail.com">sergiogravapneumo@gmail.com</a></div>

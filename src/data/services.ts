@@ -9,12 +9,12 @@ export type Service = {
 };
 
 export const services: Service[] = [
-  { slug: "consulta-com-pneumologista", title: "Consulta com Pneumologista", short: "Uma avaliação completa e individualizada para cuidar da sua respiração.", eyebrow: "Cuidado integral", icon: "01", intro: "A consulta é o ponto de partida para investigar, diagnosticar e tratar doenças que afetam os pulmões e as vias aéreas, sempre com foco no bem-estar integral do paciente.", sections: [
+  { slug: "consulta-com-pneumologista", title: "Avaliação Respiratória Individualizada", short: "Uma visão completa da sua saúde respiratória para definir um cuidado integrado e personalizado.", eyebrow: "Cuidado integral", icon: "01", intro: "A avaliação respiratória individualizada integra história clínica, exame físico e, quando necessário, recursos funcionais para compreender cada caso e definir o melhor plano de cuidado.", sections: [
     { title: "Para quem é indicada", body: "Pessoas com falta de ar, tosse persistente, chiado no peito, dor torácica ou rouquidão, além de fumantes e ex-fumantes que necessitam de acompanhamento preventivo." },
     { title: "Condições acompanhadas", body: "Asma, DPOC (bronquite crônica e enfisema pulmonar), pneumonia, apneia do sono, fibrose pulmonar e sequelas respiratórias." },
     { title: "Como funciona", body: "Uma conversa detalhada sobre seu histórico, hábitos e sintomas é seguida por exame físico minucioso. Quando necessário, são solicitados exames complementares para definir o diagnóstico e o melhor plano de tratamento." },
   ]},
-  { slug: "espirometria", title: "Espirometria e Função Pulmonar", short: "O “exame do sopro” avalia a capacidade e o funcionamento dos pulmões.", eyebrow: "Diagnóstico preciso", icon: "02", intro: "Rápida, indolor e não invasiva, a espirometria mede o volume e a velocidade do ar inspirado e expirado.", sections: [
+  { slug: "espirometria", title: "Avaliação Funcional Respiratória", short: "Análise integrada da capacidade e do funcionamento dos pulmões conforme a necessidade de cada paciente.", eyebrow: "Diagnóstico preciso", icon: "02", intro: "A avaliação funcional respiratória utiliza recursos como a espirometria para analisar, de forma rápida, indolor e não invasiva, o volume e a velocidade do ar inspirado e expirado.", sections: [
     { title: "Para quem é indicada", body: "Para diagnóstico e acompanhamento de asma e DPOC, avaliação pré-operatória, investigação de tosse persistente e monitoramento de pessoas expostas a poeira, fumaça ou produtos químicos." },
     { title: "Como funciona", body: "Sentado confortavelmente e com uma presilha nasal, o paciente assopra por um bocal descartável conectado ao espirômetro. O equipamento registra com precisão o fluxo de ar." },
     { title: "Orientações", body: "O exame pode ser realizado com ou sem broncodilatador para avaliar a resposta dos brônquios." },

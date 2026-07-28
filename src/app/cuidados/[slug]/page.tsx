@@ -20,7 +20,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <p className="kicker">{service.eyebrow}</p>
       <h1>{service.title}</h1>
       <p className="detail-lead">{service.intro}</p>
-      <a href="https://wa.me/5544991721222" target="_blank" rel="noreferrer" className="button">Agendar consulta <span>↗</span></a>
+      <a href="https://wa.me/5544991721222" target="_blank" rel="noreferrer" className="button">Agende sua avaliação respiratória <span>↗</span></a>
     </section>
     <section className="detail-content">
       <div className="detail-aside"><span>Dr. Sergio Grava</span><p>Pneumologista<br/>RQE 13548</p></div>
