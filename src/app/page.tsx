@@ -34,13 +34,16 @@ export default function Home() {
         <div className="scroll-cue"><span>Role para descobrir</span><i/></div>
       </section>
 
-      <section className="intro" id="sobre">
-        <Reveal className="intro-visual">
-          <div className="intro-photo intro-photo-main"><Image src="/clinic/corredor.jpeg" alt="Ambientes internos do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 86vw, 24vw"/></div>
-          <div className="intro-photo intro-photo-detail"><Image src="/clinic/consultorio.jpeg" alt="Consultório do Centro Médico do Pulmão" fill sizes="(max-width: 900px) 38vw, 13vw"/></div>
-        </Reveal>
-        <Reveal className="intro-title"><p className="kicker">Medicina que escuta</p><h2>Experiência clínica.<br/><em>Cuidado que acolhe.</em></h2></Reveal>
-        <Reveal className="intro-copy" delay={160}><p>O cuidado começa por compreender cada história. Uma atuação baseada em evidências, precisão diagnóstica e decisões compartilhadas.</p><Link href="#formacao" className="text-link">Conheça a trajetória <span>↘</span></Link></Reveal>
+      <section className="principles" id="sobre">
+        <div className="principles-head"><div><p className="kicker">Por que escolher o Dr. Sergio e sua equipe?</p><h2>Experiência que inspira confiança.<br/><em>Cuidado que gera resultados.</em></h2></div><p>Acompanhamento personalizado, altamente qualificado e multidisciplinar, com foco em qualidade de vida e resultados duradouros.</p></div>
+        <div className="principle-grid">
+          <Reveal><span>01</span><h3>Mais de 25 anos de experiência</h3><p>Uma trajetória dedicada à pneumologia, unindo prática clínica, atualização contínua e cuidado responsável.</p></Reveal>
+          <Reveal delay={70}><span>02</span><h3>Doutor e pesquisador</h3><p>Formação acadêmica sólida e atuação científica aplicadas às decisões de cada tratamento.</p></Reveal>
+          <Reveal delay={140}><span>03</span><h3>Professor universitário</h3><p>Experiência no ensino médico, contribuindo para a formação de profissionais e para uma medicina sempre atualizada.</p></Reveal>
+          <Reveal><span>04</span><h3>Referência em broncoscopia</h3><p>Atuação especializada em endoscopia respiratória e na investigação de doenças respiratórias complexas.</p></Reveal>
+          <Reveal delay={70}><span>05</span><h3>Atendimento personalizado</h3><p>Cada avaliação considera sintomas, histórico, rotina e objetivos para construir um plano individualizado.</p></Reveal>
+          <Reveal delay={140}><span>06</span><h3>Tempo dedicado ao paciente</h3><p>Atendimento multidisciplinar, cuidadoso e com o tempo adequado para ouvir, explicar e acompanhar cada pessoa.</p></Reveal>
+        </div>
       </section>
 
       <section className="care" id="cuidados">
@@ -73,18 +76,6 @@ export default function Home() {
       <section className="credentials" id="formacao">
         <Reveal className="credentials-visual"><div className="credentials-orbit credentials-orbit-one"/><div className="credentials-orbit credentials-orbit-two"/><div className="credentials-portrait-frame"><Image src="/clinic/dr-sergio-profissional-barba.webp" alt="Retrato profissional do Dr. Sergio Grava com barba" fill sizes="(max-width: 600px) 240px, 360px"/></div><div className="credentials-photo-label"><span>Dr. Sergio Grava</span><small>Pneumologista • RQE 13548</small></div></Reveal>
         <Reveal className="credentials-copy"><p className="kicker light">Formação & experiência</p><h2>Ciência, precisão<br/>e <em>humanidade.</em></h2><p>Médico formado pela Universidade Estadual de Maringá, com especialização em Pneumologia e área de atuação em Endoscopia Respiratória pela UNIFESP.</p><div className="degree-list"><div><span>01</span><p><b>Pneumologista</b>RQE 13548</p></div><div><span>02</span><p><b>Endoscopia Respiratória</b>RQE 158 • UNIFESP</p></div><div><span>03</span><p><b>Mestre em Ciências da Saúde</b>Universidade Estadual de Maringá</p></div><div><span>04</span><p><b>Doutor em Biociências e Fisiopatologia</b>Universidade Estadual de Maringá</p></div></div></Reveal>
-      </section>
-
-      <section className="principles" id="diferenciais">
-        <div className="principles-head"><div><p className="kicker">Por que escolher o Dr. Sergio e sua equipe?</p><h2>Experiência que inspira confiança.<br/><em>Cuidado que gera resultados.</em></h2></div><p>Acompanhamento personalizado, altamente qualificado e multidisciplinar, com foco em qualidade de vida e resultados duradouros.</p></div>
-        <div className="principle-grid">
-          <Reveal><span>01</span><h3>Mais de 25 anos de experiência</h3><p>Uma trajetória dedicada à pneumologia, unindo prática clínica, atualização contínua e cuidado responsável.</p></Reveal>
-          <Reveal delay={70}><span>02</span><h3>Doutor e pesquisador</h3><p>Formação acadêmica sólida e atuação científica aplicadas às decisões de cada tratamento.</p></Reveal>
-          <Reveal delay={140}><span>03</span><h3>Professor universitário</h3><p>Experiência no ensino médico, contribuindo para a formação de profissionais e para uma medicina sempre atualizada.</p></Reveal>
-          <Reveal><span>04</span><h3>Referência em broncoscopia</h3><p>Atuação especializada em endoscopia respiratória e na investigação de doenças respiratórias complexas.</p></Reveal>
-          <Reveal delay={70}><span>05</span><h3>Atendimento personalizado</h3><p>Cada avaliação considera sintomas, histórico, rotina e objetivos para construir um plano individualizado.</p></Reveal>
-          <Reveal delay={140}><span>06</span><h3>Tempo dedicado ao paciente</h3><p>Atendimento multidisciplinar, cuidadoso e com o tempo adequado para ouvir, explicar e acompanhar cada pessoa.</p></Reveal>
-        </div>
       </section>
 
       <section className="location-feature" id="clinica">
